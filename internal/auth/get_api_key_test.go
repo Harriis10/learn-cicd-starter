@@ -21,7 +21,7 @@ func TestGetAPIKey(t *testing.T) {
 	}
 }
 
-func TestGetAPIKeyMissingHeader(t *testing.T) 
+func TestGetAPIKeyMissingHeader(t *testing.T) {
 	headers := http.Header{}
 
 	_, err := GetAPIKey(headers)
